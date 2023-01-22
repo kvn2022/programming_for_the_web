@@ -1,7 +1,7 @@
 let grid = undefined;
 let stroke1 = prompt("enter a basic color name in lower case", "black");
 let stroke2 = prompt("enter another basic color in lowercase", "pink");
-// let stroke3 = prompt("enter in a basic color in lowercase for slime", "limegreen");
+let stroke3 = prompt("enter in a basic color in lowercase for slime", "limegreen");
 function setup() {
     createCanvas(1000, 800);
     background("#BEBEBE");
@@ -9,30 +9,30 @@ function setup() {
 }
 
 function draw() {
-    // // background(grid);
-    // // scenery
-    // // top
-    // fill('#707070');
-    // noStroke();
-    // rect(0, 0, 1000, 145);
-    // // sewer quad
-    // strokeWeight(3);
-    // stroke(105,105,105);
-    // fill(0)
-    // quad(70, 20, 250, 20, 200, 75, 25, 75);
-    // // sewer lines
-    // strokeWeight(5);
-    // stroke(176,176,176);
-    // line(100, 23, 65, 71);
-    // line(125, 23, 90, 71);
-    // line(150, 23, 115, 71);
-    // line(175, 23, 140, 71);
-    // line(200, 23, 165, 71);
-    // // bottom
-    // fill('grey');
-    // noStroke();
-    // rect(0, 600, 1000, 200);
-    // snowman sections
+    // background(grid);
+    // scenery
+    // top
+    fill('#707070');
+    noStroke();
+    rect(0, 0, 1000, 145);
+    // sewer quad
+    strokeWeight(3);
+    stroke(105,105,105);
+    fill(0)
+    quad(70, 20, 250, 20, 200, 75, 25, 75);
+    // sewer lines
+    strokeWeight(5);
+    stroke(176,176,176);
+    line(100, 23, 65, 71);
+    line(125, 23, 90, 71);
+    line(150, 23, 115, 71);
+    line(175, 23, 140, 71);
+    line(200, 23, 165, 71);
+    // bottom
+    fill('grey');
+    noStroke();
+    rect(0, 600, 1000, 200);
+    snowman sections
     fill("#00CC33");
     strokeWeight(15);
     stroke(0);
@@ -78,13 +78,13 @@ function draw() {
     line(500, 500, 600, 400);
     // interactive slime
 
-    // if (mouseIsPressed) {
-    //     noStroke();
-    //     fill(stroke3);
-    // } else {
-    //     noStroke();
-    //     noFill();
-    // } 
-    //     ellipse(mouseX, mouseY, 50, 65);
+    if (mouseIsPressed) {
+        noStroke();
+        fill(stroke3);
+    } else {
+        noStroke();
+        noFill();
+    } 
+        ellipse(mouseX, mouseY, 50, 65);
     } 
 
