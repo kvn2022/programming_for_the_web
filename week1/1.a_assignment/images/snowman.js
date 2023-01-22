@@ -1,7 +1,7 @@
 let grid = undefined;
 let stroke1 = prompt("enter a basic color name in lower case", "black");
 let stroke2 = prompt("enter another basic color in lowercase", "pink");
-let stroke3 = prompt("enter in a basic color in lowercase for slime", "limegreen");
+let stroke3 = prompt("enter in a basic color in lowercase for water", "blue");
 function setup() {
     createCanvas(1000, 800);
     background("#BEBEBE");
@@ -9,7 +9,7 @@ function setup() {
 }
 
 function draw() {
-    // background(grid);
+    // // background(grid);
     // scenery
     // top
     fill('#707070');
@@ -32,11 +32,11 @@ function draw() {
     fill('grey');
     noStroke();
     rect(0, 600, 1000, 200);
-    snowman sections
+    // snowman sections
     fill("#00CC33");
     strokeWeight(15);
     stroke(0);
-    //bottom body
+    // bottom body
     ellipse(500, 600, 350);
     // body
     fill("#00CC99");
@@ -76,6 +76,33 @@ function draw() {
     line(375, 400, 200, 500);
     // right arm
     line(500, 500, 600, 400);
+    // buddy head 1
+    fill("green");
+    strokeWeight(5);
+    stroke(0);
+    ellipse(200, 600, 100);
+    line(185, 625, 200, 620);
+    //buddy eyes 1
+    stroke(0);
+    strokeWeight(10);
+    point(200, 600);
+    point(225, 600);
+    // buddy head 2
+    fill("#66FFFF");
+    strokeWeight(5);
+    stroke(0);
+    ellipse(750, 700, 125);
+    line(750, 715, 760, 720);
+    //buddy eyes 2
+    stroke(0);
+    strokeWeight(10);
+    point(750, 660);
+    point(775, 665);
+    //buddy nose
+    noStroke()
+    fill('orange');
+    triangle(100, 750, 125, 755, 75, 775);
+
     // interactive slime
 
     if (mouseIsPressed) {
