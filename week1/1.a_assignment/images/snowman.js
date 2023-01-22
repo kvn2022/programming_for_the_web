@@ -104,7 +104,6 @@ function draw() {
     triangle(100, 750, 125, 755, 75, 775);
 
     // interactive slime
-
     if (mouseIsPressed) {
         noStroke();
         fill(stroke3);
