@@ -78,13 +78,13 @@ function draw() {
     line(500, 500, 600, 400);
     // interactive slime
 
-    if (mouseIsPressed) {
-        noStroke();
-        fill(stroke3);
-    } else {
-        noStroke();
-        noFill();
-    } 
-        ellipse(mouseX, mouseY, 50, 65);
+    // if (mouseIsPressed) {
+    //     noStroke();
+    //     fill(stroke3);
+    // } else {
+    //     noStroke();
+    //     noFill();
+    // } 
+    //     ellipse(mouseX, mouseY, 50, 65);
     }
 
