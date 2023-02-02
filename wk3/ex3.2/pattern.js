@@ -51,7 +51,7 @@ function draw() {
     createTile(200, -400, 'violet', 80, 'tomato', 20, 'yellow', 'turquoise', 'khaki');
     createTile(0, 200, 'yellow', 10, 'indigo', 10, 'lightsalmon', 'lightskyblue', 'greenyellow')
     createTile(0, 200, 'darkviolet', 30, 'burlywood', 1, 'deeppink', 'firebrick', 'cyan')
-    createTile(200, -400, 'black', 40, 'orange', 5, 'white', 'blue', 'deeppink');
-    createTile(0, 200, 'cornflowerblue', 39, 'fuchsia', 65, 'deepskyblue', 'darkseagreen', 'coral')
-    createTile(0, 200, 'hotpink', 40, 'lightpink', 40, 'lawngreen', 'lavendar', 'aqua')
+    createTile(200, -400, 'black', 5, 'orange', 5, 'white', 'blue', 'deeppink');
+    createTile(0, 200, 'cornflowerblue', 65, 'fuchsia', 65, 'deepskyblue', 'darkseagreen', 'coral')
+    createTile(0, 200, 'hotpink', 20, 'lightpink', 40, 'lawngreen', 'lavendar', 'aqua')
 }
