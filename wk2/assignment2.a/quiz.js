@@ -17,7 +17,7 @@ console.log(quizQA.length);
 //A random question prompt should appear when the page loads. The question prompt should include the value of the question. The user will respond with their guess.
 
 const randomIdx = Math.round(Math.random() * quizQA.length - 1);
-const answer = window.prompt(quizQA[randomIdx].question);
+const answer = window.prompt("Lets take a quiz about the Wonders of the World! " + quizQA[randomIdx].question);
 console.log("The question is ", quizQA[randomIdx].question);
 
 window.alert("You answered " + answer + ". The correct answer was " + quizQA[randomIdx].answer + ".");
