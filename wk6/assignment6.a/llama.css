@@ -1,0 +1,23 @@
+body {
+    background-color: crimson;
+    color: antiquewhite;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 60px;
+}
+
+ol {
+    font-family: 'Dongle', sans-serif;
+    font-size: 30px;
+
+}
+
+p {
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+img {
+    border-radius: 20px;
+}

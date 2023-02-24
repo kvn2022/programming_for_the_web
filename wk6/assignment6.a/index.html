@@ -5,11 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <title>Getting Started</title>
+    <link rel="stylesheet" href="llama.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Raleway:wght@700&family=Source+Sans+3:ital,wght@1,200&display=swap');
+      </style>
+    <title>Llama Facts</title>
 </head>
 <body>
-    <div id="myApp">{{llama}}</div>
-    <p v-if="happy">I am happy</p>
+    <h1>10 Fun Facts About Llamas!</h1>
+        <div id="myApp">
+            <ol type="1">
+                <li v-if="llamaHappy">Llamas are always happy with one another and never have disagreements!</li>
+                <li v-if="llamaAngry">When one llama is angry at another llama, they will stick their tongues out to express their dislike. Llamas don't bite. They spit when they're agitated, but that's mostly at each other.</li>
+                <li>{{llamaSpit}}</li>
+                <li>{{llamaLimit}}</li>
+                <li>{{llamaAge}}</li>
+                <li>{{llamaMama}}</li>
+                <li>{{llamaYarn}}</li>
+                <li>{{llamaPop}}</li>
+                <li>{{llamaPop}}</li>
+                <li>{{llamaColor}}</li>
+                <li>{{llamaPoop}}</li>
+            </ol>
+        </div>
+        <img src="../images/llama.jpeg" alt="Llama Head" style="width: 325px;height:450px;">
+    <p>Beckius, Kim Knox. "24 Fun Facts About Llamas." ThoughtCo, Sep. 13, 2022, <a href="https://www.thoughtco.com/fun-facts-about-llamas-3880940">thoughtco.com/fun-facts-about-llamas-3880940.</a></p>
+    <p>Photo by Atypeek Dgn: <a href="https://www.pexels.com/photo/head-of-llama-13030358/">https://www.pexels.com/photo/head-of-llama-13030358/</a></p>
     <script src="script.js"></script>    
 </body>
 </html>
