@@ -1,0 +1,8 @@
+[v-cloak] {
+    display: none
+}
+
+li.active {
+    border-bottom: 1px solid black;
+    background-color:aquamarine;
+}
