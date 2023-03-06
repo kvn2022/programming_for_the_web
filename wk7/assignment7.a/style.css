@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Yantramanav:wght@300&display=swap');
+
+html {
+    background-color: cornsilk;
+}
+body {
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Aladin', cursive;
+    font-size: 75px;
+}
+table, thead, th, tbody, tr, td {
+    border: 0.5px solid rgb(220, 207, 168);
+    text-align: center;
+}
+
+.odd {
+    background-color: rgb(205, 248, 234);
+}
+
+.second {
+    color: crimson
+}

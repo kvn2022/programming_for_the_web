@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show & Tell Collection</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+
+<body>    
+    <h1>Crystal Collection</h1>
+    <div id="myCollectionApp">
+        <table>
+            <thead>
+                <th>Crystal Name</th>
+                <th>Crystal Image</th>
+                <th>Meaning</th>
+                <th>Characteristics</th>
+                <th>Properties</th>
+            </thead>
+            <tbody>
+                <tr v-for="(rocks, idx) in crystals"
+                    v-bind:class="{odd: idx % 2 !== 0, second: rocks.collected === 'true'}">
+                    <td><img v-bind:title="rocks.crystalName"
+                        v-bind:src="rocks.images" 
+                        v-bind:alt="rocks.crystalName + ' Crystal - ' +rocks.properties" />
+                    </td>
+                    <td>{{rocks.crystalName}}</td>
+                    <td>{{rocks.meaning}}</td>
+                    <td>{{rocks.characteristics}}</td>
+                    <td>{{rocks.properties}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p><a href="https://www.crystalyzeguide.com/">Information Provided Crystalyze Guide</a></p>
+</body>
+<script src="collection.js"></script>
+</html>
