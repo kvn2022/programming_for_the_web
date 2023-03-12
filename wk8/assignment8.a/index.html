@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show & Tell Collection</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+
+<body>    
+    <h1>My Crystal Collection</h1>
+    <h2>Crystals I have and haven't collected yet!</h2>
+    <div id="myCollectionApp" v-cloak>
+        <table>
+            <thead class="header">
+                <th>Crystal Image</th>
+                <th>Crystal Name</th>
+                <th>Meaning</th>
+                <th>Characteristics</th>
+                <th>Properties</th>
+                <th>Collected</th>
+                <th class="cell actions">Remove?</th>
+            </thead>
+            <tbody>
+                <tr v-for="(rocks, idx) in crystals"
+                    v-bind:class="{odd: idx % 2 !== 0, second: rocks.collected === 'true'}">
+                    <td><img v-bind:title="rocks.crystalName"
+                        v-bind:src="rocks.images" 
+                        v-bind:alt="rocks.crystalName + ' Crystal - ' +rocks.properties" />
+                    </td>
+                    <td>{{rocks.crystalName}}</td>
+                    <td>{{rocks.meaning}}</td>
+                    <td>{{rocks.characteristics}}</td>
+                    <td>{{rocks.properties}}</td>
+                    <td>{{rocks.collected}}</td>
+                    <td><div class="cell actions">
+                        <button type="button" v-on:click="deleteItem(crystal)">Delete</button>
+                    </div></td>
+                </tr>
+            </tbody>
+        </table>
+    <form v-on:submit.prevent="submitHandler" class="new-crystal-form">
+            <fieldset>
+                <legend class="form-header">Add a NEW crystal to the collection</legend> 
+                <div>
+                    <label for="crystalImg">Crystal Image: </label>
+                    <input id="crystalImg" type="text" 
+                    v-model="newRockObj.crystalImg">
+                </div>
+                <div>
+                    <label for="crystalName">Crystal Name: </label>
+                    <input id="crystalName" type="text" 
+                    v-model="newRockObj.crystalName">
+                </div>
+                <div>
+                    <label for="meaning">Meaning: </label>
+                    <input id="meaning" type="text" 
+                    v-model="newRockObj.meaning">
+                </div>
+                <div>
+                    <label for="characteristics">Characteristics: </label>
+                    <input id="characteristics" type="text" 
+                    v-model="newRockObj.characteristics">
+                </div>
+                <div>
+                    <label for="properties">Properties: </label>
+                    <input id="properties" type="text" 
+                    v-model="newRockObj.properties">
+                </div>
+                <div>
+                    <label for="collected">Collected: </label>
+                    <input id="collected" type="checkbox" 
+                    v-model="newRockObj.collected">
+                </div>
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </div>
+    <p><img class="ball" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Crystal_Ball_with_Zodiac_Stand_in_the_Museum_of_Witchcraft_and_Magic.jpg/320px-Crystal_Ball_with_Zodiac_Stand_in_the_Museum_of_Witchcraft_and_Magic.jpg"
+    alt="crystal ball" style="width:300;height:200px;"></p>
+    <a href="https://www.crystalyzeguide.com/" style="text-align: center">All Information Provided Crystalyze Guide</a>
+</body>
+<script src="collection.js"></script>
+</html>

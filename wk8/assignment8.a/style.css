@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Yantramanav:wght@300&display=swap');
+
+[v-cloak] {
+    display: none;
+}
+html {
+    background-color: cornsilk;
+}
+body {
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+h1 {
+    font-family: 'Aladin', cursive;
+    font-size: 75px;
+}
+h2 {
+    font-family: 'Aladin', cursive;
+    font-size: 30px;
+    font-style: italic;
+}
+table, thead, th, tbody, tr, td {
+    border: 0.5px solid rgb(220, 207, 168);
+    text-align: center;
+    font-style: bold;
+}
+.header {
+    font-family: 'Aladin', cursive;
+    font-size: 35px;
+}
+.odd {
+    background-color: rgb(205, 248, 234);
+}
+.new-crystal-form fieldset {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    font-family: 'Aladin', cursive;
+    font-size: 20px;
+}
+.form-header {
+    font-size: 50px;
+}
+.new-crystal-form input {
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 15px;
+}
+.ball {
+    margin: auto;
+    display: block;
+}
