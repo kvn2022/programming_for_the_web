@@ -1,0 +1,51 @@
+[
+  {
+    "rank": 1,
+    "slug": "monstera",
+    "title": "Monstera",
+    "type": "Tropical",
+    "picture": "./images/tropical.jpeg"
+    },
+    {
+    "rank": 2,
+    "slug": "cactus",
+    "title": "Cactus",
+    "type": "Succulent Perennial",
+    "picture": "./images/cactus.jpeg"
+    },
+    {
+    "rank": 3,
+    "slug": "air-plant",
+    "title": "Air Plant",
+    "type": "Tillandsia",
+    "picture": "./images/airplant.jpeg"
+    },
+    {
+    "rank": 4,
+    "slug": "fern",
+    "title": "Fern",
+    "type": "Nonflowering Vascular Plant",
+    "picture": "./images/fern.jpeg"
+    },
+    {
+    "rank": 5,
+    "slug": "moss-ball",
+    "title": "Moss Ball",
+    "type": "Green Algae",
+    "picture": "./images/moss.jpeg"
+    },
+    {
+    "rank": 6,
+    "slug": "terrarium",
+    "title": "Terrarium",
+    "type": "High-Humidity Plants",
+    "picture": "./images/terrarium.jpeg"
+    },
+    {
+    "rank": 7,
+    "slug": "succulent",
+    "title": "Succulents",
+    "type": "Aizoaceae, Cactaceae, and Crassulaceae",
+    "picture": "./images/moss.jpeg"
+    }
+]
