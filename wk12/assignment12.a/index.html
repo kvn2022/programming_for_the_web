@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+      </style>
+    <title>Acoustic Guitar Chords</title>
+  </head>
+  <body>
+    <h1>Acoustic Guitar Chords</h1>
+
+    <h2>Press the letter key on the keyboard to play the chord!</h2>
+    
+    <div class="container">
+        <span class="dot"></span>
+    </div>
+
+    <div class="box">
+    <div id="chords">
+        <button data-key="e" class="red">E Major</button>
+        <button data-key="a" class="orange">A Major</button>
+        <button data-key="d" class="yellow">D Major</button>
+        <button data-key="c" class="green">C Major</button>
+        <button data-key="g" class="blue">G Major</button>
+    </div>
+</div>
+
+    <div id="audios">
+        <audio data-key="e" src="./e_major.mp3"></audio>
+        <audio data-key="a" src="./a_major.mp3"></audio>
+        <audio data-key="d" src="./d_major.mp3"></audio>
+        <audio data-key="c" src="./c_major.mp3"></audio>
+        <audio data-key="g" src="./g_major.mp3"></audio>
+    </div>
+
+    <script src="sketch.js"></script>
+  </body>
+</html>
