@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: rgb(220, 136, 26);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li, a, button {
+    font-family: 'Rokkitt', serif;
+    font-weight: 400;
+    font-size: 27px;
+    color:chocolate;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 1%;
+    background-color: rgb(250, 204, 135);
+}
+
+.nav__links {
+    list-style: none;
+    justify-content: space-between;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 15px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+button {
+    margin-left: 5px;
+    padding: 5px 5px;
+    color: white;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: help;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(22, 179, 218, 0.8);
+}
+
+.notes button {
+    background-color:  rgb(158, 168, 7);
+    padding: 9px 10px;
+    cursor: crosshair
+}
+
+.notes button:hover {
+    color: rgb(139, 6, 148);
+    background-color: rgb(191, 203, 12);
+    text-decoration: underline;
+}
+
+.container {
+    position: relative;
+    width: 50%;
+}
+  
+.image {
+    opacity: 1;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    padding-left: 150px;
+    padding-top: 35px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+  
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 40%;
+    left: 105%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+  
+.container:hover .image {
+    opacity: 0.3;
+}
+  
+.container:hover .middle {
+    opacity: 1;
+}
+  
+.text {
+    font-family:'Rokkitt', serif; 
+    background-color: #c94909;
+    color: white;
+    font-size: 37px;
+    padding: 1rem;
+    text-align: center;
+    width: 700px;
+    height: 400px
+}
+
+.container__contact__header { 
+    font-family: 'Rokkitt', serif;  
+    line-height: 30px;
+    min-height: 100vh;
+    justify-content: left;
+    padding-left: 50px;
+    padding-top: 25px;
+}
+
+.container__contact__header li { 
+    font-size: 25px;
+    font-style: italic;
+    color: rgb(5, 60, 94);
+    list-style: none;
+}
+
+.Submit {
+    margin-left: 200px;
+    padding: 20px;
+} 
+
+
+.container__contact__header h1 {
+    padding-left: 40px;
+    padding-top: 25px;
+    font-size: 50px;
+}
+
+.container__contact__header h2 {
+    padding-left: 40px;
+    padding-top: 25px;
+    font-size: 30px;
+}
